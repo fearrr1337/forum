@@ -1,0 +1,2 @@
+# forum
+Форум на Django
