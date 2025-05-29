@@ -1,0 +1,164 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid" style="background-color: #2c2c2c; color: #fff;">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Column: Text Content -->
+            <div class="col-lg-6 text-center text-lg-start pe-lg-5">
+                <h1 class="display-3 fw-bold" style="color: #FFBF00;">Перезагрузи свою карьеру с ProgerHub!</h1>
+                <p class="lead mb-5" style="color: #eee;">Получи навыки, необходимые для работы в IT. От новичка до Junior, мы поможем тебе освоить востребованную профессию и найти работу мечты. </p>
+
+                <div class="my-4">
+                    <h4 class="fw-bold mb-3" style="color: #eee;">ProgerHub - это:</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-rocket fa-lg" style="color: #FFBF00; margin-right: 10px;"></i>
+                            <span style="color: #eee;">Экспресс-курс до Senior-разработчика</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-project-diagram fa-lg" style="color: #FFBF00; margin-right: 10px;"></i>
+                            <span style="color: #eee;">Портфолио с реальными проектами для работодателей</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-handshake fa-lg" style="color: #FFBF00; margin-right: 10px;"></i>
+                            <span style="color: #eee;">Поддержка менторов и мощное IT-комьюнити</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-sync fa-lg" style="color: #FFBF00; margin-right: 10px;"></i>
+                            <span style="color: #eee;">Актуальные знания и тренды современной IT-индустрии</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fas fa-briefcase fa-lg" style="color: #FFBF00; margin-right: 10px;"></i>
+                            <span style="color: #eee;">Гарантированная помощь в трудоустройстве</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="{% url 'about' %}" class="btn btn-lg shadow" style="background-color: #FFBF00; color: black; border-color: #FFBF00;">Начать обучение прямо сейчас</a>
+            </div>
+            <!-- Right Column: Image Content -->
+            <div class="col-lg-6 text-center">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="{% static 'main/img/3.jpg' %}" alt="Modern Programming Illustration" class="img-fluid rounded-4 shadow-lg mb-3" style="object-fit: cover; max-height: 500px; width: auto;">
+                    <img src="https://img.freepik.com/premium-photo/man-sits-computer-room-table-night-with-blue-lighting-programs_309878-2251.jpg?w=996" alt="Another Illustration" class="img-fluid rounded-4 shadow-lg" style="object-fit: cover; max-height: 500px; width: auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Why Choose ProgerHub-->
+    <div class="container mt-5 py-5">
+        <h2 class="text-center fw-bold mb-5" style="color: #c9c9c9;">Почему ProgerHub - это твой лучший выбор?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0" style="background-color: #333; color: #eee;">
+                    <div class="card-body text-center">
+                        <i class="fas fa-graduation-cap fa-3x" style="color: #FFBF00; margin-bottom: 10px;"></i>
+                        <h5 class="card-title fw-bold" style="color: #eee;">Профессиональные курсы</h5>
+                        <p class="card-text" style="color: #eee;">Обучение от ведущих экспертов с опытом работы в IT-компаниях.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0" style="background-color: #333; color: #eee;">
+                    <div class="card-body text-center">
+                        <i class="fas fa-laptop-code fa-3x" style="color: #FFBF00; margin-bottom: 10px;"></i>
+                        <h5 class="card-title fw-bold" style="color: #eee;">Практические навыки</h5>
+                        <p class="card-text" style="color: #eee;">Создание реальных проектов для твоего портфолио.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0" style="background-color: #333; color: #eee;">
+                    <div class="card-body text-center">
+                        <i class="fas fa-headset fa-3x" style="color: #FFBF00; margin-bottom: 10px;"></i>
+                        <h5 class="card-title fw-bold" style="color: #eee;">Индивидуальная поддержка</h5>
+                        <p class="card-text" style="color: #eee;">Наставничество и помощь от опытных менторов и экспертов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    color: #eee;
+}
+
+
+.display-3 {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.lead {
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+
+.btn-primary {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 123, 255, 0.5);
+}
+
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+
+.py-5 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+.pe-lg-5 {
+    padding-right: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 2.0rem !important; /* Headline */
+}
+
+.mb-5 {
+    margin-bottom: 3.5rem !important; /* Section title margin */
+}
+
+/* List */
+.list-unstyled li {
+    transition: background-color 0.3s ease;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.list-unstyled li:hover {
+    background-color: rgba(0,123,255,0.05);
+}
+
+</style>
+
+{% endblock %}

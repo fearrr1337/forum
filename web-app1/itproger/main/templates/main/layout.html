@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="logo-header">
+            <img src="{% static 'main/img/1.png' %}" alt="Лого" class="logo-img">
+            <span class="logo-text"></span>
+        </header>
+        <nav>
+            <h3 class="navigation">Навигация</h3>
+            <ul class="nav-list">
+                <li><a href="{% url 'home' %}"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="{% url 'about' %}"><i class="fas fa-address-card"></i> Про нас</a></li>
+                <li><a href="{% url 'news_home' %}"><i class="fas fa-newspaper"></i> Новости</a></li>
+                <li><a href="{% url 'contacts' %}"><i class="fas fa-paper-plane"></i> Контакты</a></li>
+                <li><a href="{% url 'create' %}"><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить <p class="zapis">запись</p></button></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <style>
+        .zapis {
+            margin-left: 15px;
+        }
+    </style>
+    <main class="main-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

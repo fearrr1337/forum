@@ -1,0 +1,142 @@
+body {
+    background-color: #2c2c2c;
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    position: top;
+}
+
+
+/* Панель слева*/
+.sidebar {
+    float: left;
+    background-color: #181818;
+    width: 19%;
+    padding: 2.5%;
+    height: 150vh;
+    color: #ffffff;
+    border-right: 5px solid #4d4d4d;
+    box-sizing: border-box;
+
+}
+/* Навигация */
+.logo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 300px;
+    margin-right: -50px;
+}
+
+.logo-text {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* Изменения для иконок */
+.nav-list i {
+    margin-right: 12px; /* Увеличиваем отступ справа от иконки */
+    width: 24px; /* Увеличиваем ширину для большего размера */
+    text-align: center;
+    font-size: 24px; /* Увеличиваем размер иконки */
+    color: #FFBF00; /* Устанавливаем оранжевый цвет */
+    display: inline-block; /*  Чтобы margin работал корректно */
+}
+
+/* Изменения для ссылок */
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: flex; /* Для выравнивания иконки и текста по вертикали */
+    align-items: center; /* Выравниваем элементы внутри ссылки по центру */
+    padding: 10px; /* добавляем отступы, чтобы было больше места вокруг */
+}
+
+.nav-list a:hover {
+    color: #FFD700; /* Цвет при наведении, немного светлее */
+}
+
+/* Изменения для кнопки */
+.nav-list button {
+    background-color: #FFBF00; /* Устанавливаем оранжевый цвет */
+    color: #000; /* Черный текст для контраста с оранжевым */
+    border: none;
+    padding: 12px 25px; /* Увеличиваем отступы для большего размера */
+    font-size: 18px; /* Немного увеличиваем размер шрифта */
+    cursor: pointer;
+    border-radius: 8px; /* Закругленные углы */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные переходы */
+    width: 100%; /* Кнопка на всю ширину панели */
+    box-sizing: border-box; /* Важно для ширины */
+    font-weight: 600; /* Делаем текст полужирным */
+    outline: none; /* Убираем обводку при фокусе */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+}
+
+.nav-list button:hover {
+    background-color: #FFD700; /* Цвет при наведении, немного светлее */
+    transform: translateY(-2px); /* Поднимаем кнопку при наведении */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4); /* Увеличиваем тень */
+    color: #000; /* Черный цвет текста при наведении */
+}
+
+.nav-list button:active {
+    transform: translateY(0); /* Возвращаем кнопку в исходное положение при нажатии */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Уменьшаем тень при нажатии */
+}
+
+.nav-list button i {
+    color: #000; /* Черный цвет для значка */
+}
+
+
+.main-content {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.features {
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+}
+
+.features h1 {
+    font-size: 50px;
+}
+
+.features p {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.alert-warning {
+    float: right;
+    clear: both;
+    width: 800px;
+    margin: 20px 35%;
+    text-align: left 1px;
+    left: 200px;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.anons {
+    margin-left: 32%;
+}

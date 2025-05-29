@@ -1,0 +1,175 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="contact-info p-4 rounded shadow-sm">
+                <h2 class="mb-4" style="color: #FFBF00;">Контактная информация</h2>
+                <p class="mb-3 text-white">Свяжитесь с нами любым удобным способом:</p>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-map-marker-alt mr-2 text-muted"></i>
+                        Адрес: ул. Примерная, д. 123, г. Москва
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-phone mr-2 text-muted"></i>
+                        Телефон: +7 (495) 123-45-67
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-envelope mr-2 text-muted"></i>
+                        Email: <a href="mailto:info@progerhub.com" class="text-info">info@progerhub.com</a>
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fab fa-telegram mr-2 text-muted"></i>
+                        Telegram: <a href="https://t.me/progerhub" class="text-info">@progerhub</a>
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fab fa-vk mr-2 text-muted"></i>
+                        ВКонтакте: <a href="https://vk.com/progerhub" class="text-info">vk.com/progerhub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="contact-form p-4 rounded shadow-sm">
+                <h2 class="mb-4" style="color: #FFBF00;">Напишите нам</h2>
+                <form class="main-11">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-white">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label text-white">Сообщение</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #FFBF00; border-color: #FFBF00;">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="additional-info p-4 rounded shadow-sm">
+                <h2 class="mb-4" style="color: #FFBF00;">Дополнительная информация</h2>
+                <p class="text-white">Здесь вы можете найти ответы на часто задаваемые вопросы, а также узнать больше о нашей компании и услугах.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-question-circle mr-2 text-muted"></i>
+                        <a href="#" class="text-info">FAQ</a>
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-briefcase mr-2 text-muted"></i>
+                        <a href="#" class="text-info">О нас</a>
+                    </li>
+                    <li class="mb-2 text-white">
+                        <i class="fas fa-cogs mr-2 text-muted"></i>
+                        <a href="#" class="text-info">Услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="map-container rounded shadow-sm">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3505820774234!2d37.61766391627238!3d55.75577378055217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a53c5a98863%3A0x2346a4a2a148b8f5!2z0JzQldCh0L3QviwgMTIzLCDQnNC-0YHQutCy0LAsINCc0L7RgdC60LLQsCwgMTE1MTE0!5e0!3m2!1sru!2sru!4v1685705311890!5m2!1sru!2sru"
+                        width="100%"
+                        height="500"  <!-- Увеличенная высота карты -->
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #2c2c2c; /* Dark background */
+        color: #fff; /* White text */
+    }
+
+    .contact-info {
+        background-color: #333; /* Dark card background */
+        border: 1px solid #4d4d4d;
+    }
+
+    .contact-form {
+        background-color: #333; /* Dark card background */
+        border: 1px solid #4d4d4d;
+    }
+
+    .main-11{
+        max-width: 300px;
+        margin-left: -5px;
+    }
+
+    .additional-info {
+        background-color: #333; /* Dark card background */
+        border: 1px solid #4d4d4d;
+    }
+
+    .map-container {
+        background-color: #333; /* Dark map container */
+    }
+
+    .form-control {
+        background-color: #444; /* Dark input background */
+        border: 1px solid #555;
+        color: #fff;
+    }
+
+    .form-control:focus {
+        background-color: #555;
+        border-color: #FFBF00; /* Highlight focus with yellow */
+        box-shadow: 0 0 0 0.2rem rgba(255, 191, 0, 0.25); /* Yellow shadow on focus */
+        color: #fff;
+    }
+
+    .btn {
+        color: #000; /* Black text on yellow button */
+    }
+
+    .btn:hover {
+        background-color: #e6ac00; /* Darker yellow on hover */
+        border-color: #e6ac00;
+        color: #000;
+    }
+
+    .text-info {
+        color: #FFBF00 !important;
+    }
+
+    /* Ensure icons and text are aligned properly */
+    .list-unstyled li i {
+        width: 1.2em; /* Fixed width for icons */
+        display: inline-block; /* Align them properly */
+        text-align: center; /* Center icons */
+    }
+    .form-control {
+            position: top;
+        }
+
+        .form-group {
+            max-width: 470px;
+            margin-left: -150px;
+
+        }
+
+        .btn-primary {
+            margin-left: -150px;
+        }
+</style>
+{% endblock %}
+
+
